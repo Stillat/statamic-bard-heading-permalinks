@@ -1,0 +1,38 @@
+{
+    "name": "stillat/statamic-bard-heading-permalinks",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Stillat\\StatamicBardHeadingPermalinks\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" }
+    },
+    "require": {
+        "php": "^8.1",
+        "statamic/cms": "^4"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.24",
+        "orchestra/testbench": "^8.14",
+        "pestphp/pest-plugin-laravel": "^2.2"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Bard Heading Permalinks",
+            "description": "Provides a permalink extension for Bard that is compatible with Statamic's markdown settings."
+        },
+        "laravel": {
+            "providers": [
+                "Stillat\\StatamicBardHeadingPermalinks\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true,
+            "pestphp/pest-plugin": true
+        }
+    }
+}
